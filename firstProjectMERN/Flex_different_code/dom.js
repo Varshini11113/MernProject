@@ -1,4 +1,10 @@
+var count = 0;
 function circle(){
-    console.log("circle")
-    document.getElementById("square").setAttribute('style', 'border-radius: 50%;');
+    count++;
+    if(count%2 != 0){
+        document.getElementById("square").setAttribute('style', 'border-radius: 50%;');
+    }
+    else{
+        document.getElementById("square").setAttribute('style', 'border-radius: 0%;');
+    }
 }
